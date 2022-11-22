@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 class Hello extends Component{
  render(){
-return <h1>Hello</h1>
+return <h1>Hello {this.props.name} a.k.a. {this.props.heroName}</h1>
  }
 }
 

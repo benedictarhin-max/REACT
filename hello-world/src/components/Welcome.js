@@ -6,11 +6,16 @@ import React from 'react'
 
 const Welcome = (props) => {
     console.log(props)
-return <h1>{props.name} aka {props.heroName}: Welcome heroes!</h1> 
-
+return (
+<div>
+<h1>{props.name} aka {props.heroName}: Welcome heroes!</h1>
+{props.children}
+</div>
+)
+}
 // return React.createElement(
 // 'div', {className: 'host'}, 
 // React.createElement(
 // 'h1', null, 'Curtis Holt: Hello'))
-}
+
 export default Welcome;
