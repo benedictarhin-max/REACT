@@ -1,26 +1,26 @@
 import React, {Component} from 'react'
 
 class Message extends Component{
-    constructor(){
+constructor(){
 super()
 this.state = {
-        message : "You are the only ones who can stop him."
+    message: 'Welcome heroes!'
+} 
 }
-    }
 
-    changeMessage(){
-        this.setState({
-            message: "His name is Dax Novu!"
-        })
-    }
+changeMessage(){
+    this.setState ({
+        message: "The fate of the universe hangs in the balance!"
+    })
+}
 
     render(){
         return (
         <div>
         <h1>
             {this.state.message}
-            </h1>
-            <button onClick = {()=> this.changeMessage()}>Details</button>
+        </h1>
+            <button onClick={()=> this.changeMessage()}>Details</button>
             </div>
     )
 }

@@ -5,11 +5,11 @@ import React from 'react'
 // }
 
 const Welcome = (props) => {
-    console.log(props)
+    const {name, heroName, children} = props
 return (
 <div>
-<h1>{props.name} aka {props.heroName}: Welcome heroes!</h1>
-{props.children}
+<h1>{name} a.k.a. {heroName}</h1>
+{children}
 </div>
 )
 }
